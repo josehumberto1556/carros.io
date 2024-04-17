@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio-Pagina de Carros</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/car-logo.png" class="logo" alt="">
+            <div class="menu">
+                <a href="index.htm">Inicio</a>
+                <a href="sobreNosotros.html">Sobre Nosotros</a>
+                <a href="Carros.html">Carros</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Velocidad rapida</h4>
+            <h1>Aduiere tu  <br> <span>Carro</span></h1>
+            <p>Con las uñtimas tecnologia .</p>
+            <a href="#" class="btn">Tu carro al instante</a>
+        </div>
+    </div>
+   
+    <div class="container py-5">
+        <div class="row py-5">
+            <form class="col-md-9 m-auto" method="post" role="form">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputname">Nombre</label>
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputemail">Email</label>
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputsubject">Asunto</label>
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto">
+                </div>
+                <div class="mb-3">
+                    <label for="inputmessage">Mesanje</label>
+                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Mensaje" rows="8"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col text-end mt-2">
+                        <button type="submit" class="btn btn-danger btn-lg px-3">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+ 
+
+
+
+<footer>
+    <p>Todos los derechos resevados 2024</p>
+</footer>
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(images/bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(images/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio-Pagina de Carros</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/car-logo.png" class="logo" alt="">
+            <div class="menu">
+                <a href="index.htm">Inicio</a>
+                <a href="sobreNosotros.html">Sobre Nosotros</a>
+                <a href="Carros.html">Carros</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Velocidad rapida</h4>
+            <h1>Aduiere tu  <br> <span>Carro</span></h1>
+            <p>Con las uñtimas tecnologia .</p>
+            <a href="#" class="btn">Tu carro al instante</a>
+        </div>
+    </div>
+   
+    <section class="container py-5">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Sobre Nosotros</h1>
+                <p>
+                    Esta empresa se destaca por ser una de las fabricantes de autos más reconocidas a nivel global, con una trayectoria que se extiende por décadas. Su presencia se expande a través de diversos países y continentes, ofreciendo una amplia gama de vehículos que se ajustan
+                     a las necesidades y preferencias de diversos públicos.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"  style="color:#dd0707;"></i></div>
+                    <h2 class="h5 mt-4 text-center">Entrega de piezas </h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fas fa-exchange-alt" style="color:#dd0707;"></i></div>
+                    <h2 class="h5 mt-4 text-center">Comunicaci&oacute;n directa</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-percent" style="color:#dd0707;"></i></div>
+                    <h2 class="h5 mt-4 text-center">Promociones</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-user" style="color:#dd0707;"></i></div>
+                    <h2 class="h5 mt-4 text-center">24 Hooras Servici</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
+
+
+
+<footer>
+    <p>Todos los derechos resevados 2024</p>
+</footer>
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(images/bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(images/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>
